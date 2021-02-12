@@ -11,8 +11,8 @@ class CheckoutSummary extends Component {
                 <div style={{ width: '100%', margin: 'auto' }}>
                     <Burger ingredients={this.props.ingredients} />
                 </div>
-                <Button clicked btnType='Danger'>CANCEL</Button>
-                <Button clicked btnType='Success'>CONTINUE</Button>
+                <Button clicked={this.props.checkoutCancelled} btnType='Danger'>CANCEL</Button>
+                <Button clicked={this.props.checkoutContinued} btnType='Success'>CONTINUE</Button>
             </div>
         )
     }
